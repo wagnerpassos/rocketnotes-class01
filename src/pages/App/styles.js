@@ -9,7 +9,15 @@ export const Container = styled.div`
     grid-template-areas: 
     "header"
     "content";
-`
+
+
+    > main {
+        grid-area: content;
+        overflow-y: scroll;
+        padding: 64px 0;
+    }
+`;
+
 export const Links = styled.div`
     list-style: none;
 
@@ -20,5 +28,29 @@ export const Links = styled.div`
             color: ${({theme}) => theme.COLORS.WHITE};
         }
     }
-`
+`;
+
+export const Content = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    max-width: 550px;
+    margin: 0 auto;
+
+    > button:first-child {
+        align-self: end;
+    }
+
+    > h1 {
+        font-size: 36px;
+        font-weight: 500;
+        padding-top: 64px ;
+    }
+
+    > p {
+        font-size: 16px;
+        margin-top: 16px;
+        text-align: justify;
+    }
+`;
 
