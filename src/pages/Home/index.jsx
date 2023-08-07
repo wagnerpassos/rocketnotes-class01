@@ -13,7 +13,6 @@ export function Home() {
                 <h1>RocketNotes</h1>
             </Brand>
             <Header>
-
             </Header>
             <Menu>
                 <li><ButtonText isActive title="Todos"/></li>
